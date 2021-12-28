@@ -8,6 +8,8 @@ import { MatFormFieldModule,  } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 
+import { DataTablesModule } from 'angular-datatables';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EngemanGerencialComponent } from './pages/engeman-gerencial/engeman-gerencial.component';
@@ -35,7 +37,8 @@ import { FilterPipe } from './components/pipes/filter.pipe';
     MatDatepickerModule,
     MatFormFieldModule,
     MatInputModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    DataTablesModule
   ],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'pt-br' }],
   bootstrap: [AppComponent]
