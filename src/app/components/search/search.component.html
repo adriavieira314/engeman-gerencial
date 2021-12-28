@@ -1,0 +1,22 @@
+<div class="d-flex justify-content-around mt-4">
+   <form>
+      <i aria-hidden="true" class="fa fa-search mr-1"></i>
+      <input
+         #searchValue
+         [value]="value"
+         type="search"
+         class="form-control"
+         placeholder="Filtrar por OS, Funcionário ou Matrícula"
+         autofocus
+         (keyup)="debounce.next(searchValue.value)"
+      >
+   </form>
+
+   <mat-form-field appearance="fill">
+      <mat-label>Filtrar por data</mat-label>
+      <input matInput [matDatepicker]="picker" (dateChange)="addEvent('change', $event)">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+   </mat-form-field>
+    
+</div>
