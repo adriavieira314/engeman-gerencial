@@ -36,7 +36,6 @@ export class EngemanGerencialComponent implements OnInit {
 
   //Table DATA
   //datatable custom json data
-     
   public tabledata = [
     {os: '1478', dataInicio:'2021-12-20', horaInicio: '20:32', dataFim: '2021-12-20', horaFim: '20:32', totalHoras: '09:00', funcionarios: 'Adria', matricula: '1587', descricao: 'Construção layout inicial do engeman gerencial' },
     {os: '4597', dataInicio:'2021-12-17', horaInicio: '20:32', dataFim: '2021-12-17', horaFim: '20:32', totalHoras: '09:00', funcionarios: 'Abel', matricula: '4795', descricao: 'Construção layout inicial do engeman gerencial' },
@@ -60,9 +59,7 @@ export class EngemanGerencialComponent implements OnInit {
     };
     //datepicker on change
     $('.dateadded').on( 'change', function (ret :any) {
-
       var v = ret.target.value  // getting search input value
-      
       $('#dataTables-example').DataTable().columns(3).search(v).draw();
     });
   }
