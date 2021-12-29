@@ -3,11 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "postinstall": "ngcc"
+    "postinstall": "ngcc",
+    "heroku-postbuild": "ng build --prod"
+  },
+  "engines": {
+    "node": "16.13.1",
+    "npm": "7.19.1"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +43,7 @@
     "@types/jasmine": "~3.10.0",
     "@types/jquery": "^3.5.9",
     "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^1.0.0",
     "jasmine-core": "~3.10.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
