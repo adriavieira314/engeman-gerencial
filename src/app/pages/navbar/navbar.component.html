@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary pt-3 pb-3">
    <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
@@ -8,14 +8,56 @@
             <li class="nav-item">
                <a class="nav-link fs-5 text-light" [routerLink]="['']">Início</a>
             </li>
+            <!-- INJET -->
             <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle fs-5 text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Manutenção
+                  Injet
                </a>
                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" [routerLink]="['engeman-gerencial']">Engeman</a></li>
-                  <li><a class="dropdown-item" href="#">Outro</a></li>
-                  <li><a class="dropdown-item" href="#">Outra coisa também</a></li>
+                  <li><a class="dropdown-item" href="#">Relatório 1</a></li>
+                  <li><a class="dropdown-item" href="#">Relatório 2</a></li>
+               </ul>
+            </li>
+            <!-- ELEVADOR -->
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle fs-5 text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Elevador
+               </a>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Elevador 2012</a></li>
+                  <li><a class="dropdown-item" href="#">Elevador 2018</a></li>
+                  <li class="pt-2 pb-2 fw-bold">Cadastros de material</li>
+                  <li><a class="dropdown-item" href="#">Elevador 2010</a></li>
+               </ul>
+            </li>
+            <!-- ENGEMAN -->
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle fs-5 text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Engeman
+               </a>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" [routerLink]="['engeman-gerencial']">Tela Gerencial</a></li>
+                  <li><a class="dropdown-item" href="#">Relatório 2</a></li>
+               </ul>
+            </li>
+            <!-- MOINHO -->
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle fs-5 text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Moinho
+               </a>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Relatório 1</a></li>
+                  <li><a class="dropdown-item" href="#">Relatório 2</a></li>
+               </ul>
+            </li>
+            <!-- ETIQUETA -->
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle fs-5 text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Etiqueta
+               </a>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Relatório 1</a></li>
+                  <li><a class="dropdown-item" href="#">Relatório 2</a></li>
                </ul>
             </li>
          </ul>
