@@ -6,34 +6,6 @@ declare var $ :any;
   styleUrls: ['./engeman-gerencial.component.css']
 })
 export class EngemanGerencialComponent implements OnInit {
-  search: string = '';
-  dados_os: any[] = [
-    {
-      "os": '1234',
-      "dataInicio": '21/12/2021',
-      "horaInicio": '20:32',
-      "dataFim": '21/12/2021',
-      "horaFim": '20:32',
-      "totalHoras": '09:00',
-      "funcionarios": 'Adria',
-      "matricula": '7997',
-      "descricao": 'Construção layout inicial do engeman gerencial',
-    },
-    {
-      "os": '5678',
-      "dataInicio": '22/12/2021',
-      "horaInicio": '20:32',
-      "dataFim": '22/12/2021',
-      "horaFim": '20:32',
-      "totalHoras": '09:00',
-      "funcionarios": 'Levy',
-      "matricula": '8181',
-      "descricao": 'Construção layout inicial do engeman gerencial',
-    },
-  ];
-
-  constructor() { }
-
   //Table DATA
   //datatable custom json data
   public tabledata = [
@@ -48,8 +20,10 @@ export class EngemanGerencialComponent implements OnInit {
     {os: '3214', dataInicio:'2021-12-09', horaInicio: '20:32', dataFim: '2021-12-09', horaFim: '20:32', totalHoras: '09:00', funcionarios: 'Sofia', matricula: '9682', descricao: 'Construção layout inicial do engeman gerencial' },
     {os: '8962', dataInicio:'2021-12-01', horaInicio: '20:32', dataFim: '2021-12-01', horaFim: '20:32', totalHoras: '09:00', funcionarios: 'Bruna', matricula: '4736', descricao: 'Construção layout inicial do engeman gerencial' },
   ];
-
   dtOptions: DataTables.Settings = {};
+
+  constructor() { }
+  
   ngOnInit() {
     this.dtOptions = {
       language: {
@@ -63,5 +37,4 @@ export class EngemanGerencialComponent implements OnInit {
       $('#dataTables-example').DataTable().columns(3).search(v).draw();
     });
   }
-
 }
