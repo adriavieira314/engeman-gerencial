@@ -8,28 +8,28 @@
    <table id="dataTables-example" class="table table-striped table-bordered table-sm row-border hover" datatable [dtOptions]="dtOptions">
       <thead>
          <tr>
-            <th>OS</th>
-            <th>Data InÍcio</th>
-            <th>Hora InÍcio</th>
-            <th>Data Fim</th>
-            <th>Hora Fim</th>
-            <th>Total Horas</th>
-            <th>Funcionarios</th>
-            <th>Matrícula</th>
-            <th>Descriçaão</th>
+            <th class="table-header">OS</th>
+            <th class="table-header">Data InÍcio</th>
+            <th class="table-header">Hora InÍcio</th>
+            <th class="table-header">Data Fim</th>
+            <th class="table-header">Hora Fim</th>
+            <th class="table-header">Total Horas</th>
+            <th class="table-header">Funcionários</th>
+            <th class="table-header">Matrícula</th>
+            <th class="table-header">Descrição</th>
          </tr>
       </thead>
       <tbody>
        <tr *ngFor="let group of tabledata">
-            <td>{{group.os}}</td>
-            <td>{{group.dataInicio}}</td> 
-            <td>{{group.horaInicio}}</td>
-            <td>{{group.dataFim}}</td>
-            <td>{{group.horaFim}}</td>
-            <td>{{group.totalHoras}}</td>
-            <td>{{group.funcionarios}}</td>
-            <td>{{group.matricula}}</td>
-            <td>{{group.descricao}}</td>
+            <td class="table-item">{{group.os}}</td>
+            <td class="table-item">{{group.dataInicio}}</td> 
+            <td class="table-item">{{group.horaInicio}}</td>
+            <td class="table-item">{{group.dataFim}}</td>
+            <td class="table-item">{{group.horaFim}}</td>
+            <td class="table-item">{{group.totalHoras}}</td>
+            <td class="table-item">{{group.funcionarios}}</td>
+            <td class="table-item">{{group.matricula}}</td>
+            <td class="table-item">{{group.descricao}}</td>
          </tr>
       </tbody>
    </table>

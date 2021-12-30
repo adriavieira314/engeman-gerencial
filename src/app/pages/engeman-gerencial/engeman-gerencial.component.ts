@@ -27,8 +27,8 @@ export class EngemanGerencialComponent implements OnInit {
   ngOnInit() {
     this.dtOptions = {
       language: {
-        searchPlaceholder: 'Filtrar',
-        search: 'Filtrar por OS, Funcionários ou Matrícula'
+        searchPlaceholder: 'OS, Funcionários ou Matrícula',
+        search: 'Filtrar: '
       }
     };
     //datepicker on change
