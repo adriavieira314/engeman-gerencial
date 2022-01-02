@@ -16,7 +16,6 @@ export class NavbarComponent implements OnInit {
     if (this.screenWidth < 1000) {
       this.isMobile = true;
     }
-    console.log(this.screenWidth);
   }
 
 }
