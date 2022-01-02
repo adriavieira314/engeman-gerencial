@@ -1,12 +1,12 @@
-<div class="d-flex justify-content-around mt-4">
-   <form>
-      <i aria-hidden="true" class="fa fa-search mr-1"></i>
+<div class="d-flex justify-content-end">
+   <form class="d-flex">
+      <i aria-hidden="true" class="fa fa-search fa-2x"></i>
       <input
          #searchValue
          [value]="value"
-         type="search"
-         class="form-control"
-         placeholder="Filtrar por OS, Funcionário ou Matrícula"
+         type="text"
+         class="form-control ms-2"
+         placeholder="Filtrar por cliente"
          autofocus
          (keyup)="debounce.next(searchValue.value)"
       >

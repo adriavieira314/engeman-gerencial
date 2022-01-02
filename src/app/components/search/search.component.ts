@@ -15,16 +15,14 @@ export class SearchComponent implements OnInit, OnDestroy{
   //debounce serve para que identificar quando o usuario termina de digitar
   //e uma funcao é ativada depois de certo tempo, aqui é depois de 300milisegundos
   ngOnInit() {
-    this.debounce.pipe(debounceTime(300)).subscribe(filter => this.onTyping.emit(filter));
+    this.debounce.pipe(debounceTime(300)).subscribe((filter ) => {
+      this.onTyping.emit(filter)
+      console.log(filter);
+      
+    });
   }
 
   ngOnDestroy(): void {
     this.debounce.unsubscribe();
-  }
-
-  events: string[] = [];
-
-  addEvent(type: string, event: MatDatepickerInputEvent<Date>) {
-    console.log(`${event.value?.getDate()}`);
   }
 }

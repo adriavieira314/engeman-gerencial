@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from "@angular/router";
@@ -13,11 +13,17 @@ import { DataTablesModule } from 'angular-datatables';
 
 import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.component';
 import { EngemanGerencialComponent } from './engeman-gerencial/engeman-gerencial.component';
+import { EtiquetasGerencialComponent } from './etiquetas-gerencial/etiquetas-gerencial.component';
+import { SearchComponent } from '../components/search/search.component';
+import { FilterPipe } from '../components/pipes/filter.pipe';
 
 @NgModule({
   declarations: [
     EngemanGerencialComponent,
     PaginaInicialComponent,
+    EtiquetasGerencialComponent,
+    FilterPipe,
+    SearchComponent
   ],
   imports: [
     CommonModule,
@@ -30,7 +36,7 @@ import { EngemanGerencialComponent } from './engeman-gerencial/engeman-gerencial
     MatFormFieldModule,
     MatInputModule,
     MatNativeDateModule,
-    DataTablesModule
+    DataTablesModule,
   ],
   exports: [
     BrowserModule,
@@ -42,8 +48,9 @@ import { EngemanGerencialComponent } from './engeman-gerencial/engeman-gerencial
     MatFormFieldModule,
     MatInputModule,
     MatNativeDateModule,
-    DataTablesModule
+    DataTablesModule,
   ],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'pt-br' }],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class PagesModule { }
