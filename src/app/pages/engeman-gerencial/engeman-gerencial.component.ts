@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+
 declare var $ :any;
+
 @Component({
   selector: 'app-engeman-gerencial',
   templateUrl: './engeman-gerencial.component.html',
   styleUrls: ['./engeman-gerencial.component.css']
 })
 export class EngemanGerencialComponent implements OnInit {
-  //Table DATA
-  //datatable custom json data
   public tabledata = [
     {os: '1478', maquina: '64', dataInicio:'2021-12-20', horaInicio: '20:32', dataFim: '2021-12-20', horaFim: '20:32', totalHoras: '09:00', funcionarios: 'Adria', matricula: '1587', descricao: 'Construção layout inicial do engeman gerencial' },
     {os: '4597', maquina: '65', dataInicio:'2021-12-17', horaInicio: '20:32', dataFim: '2021-12-17', horaFim: '20:32', totalHoras: '09:00', funcionarios: 'Abel', matricula: '4795', descricao: 'Construção layout inicial do engeman gerencial' },
