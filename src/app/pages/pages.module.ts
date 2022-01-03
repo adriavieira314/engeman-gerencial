@@ -16,6 +16,7 @@ import { EngemanGerencialComponent } from './engeman-gerencial/engeman-gerencial
 import { EtiquetasGerencialComponent } from './etiquetas-gerencial/etiquetas-gerencial.component';
 import { SearchComponent } from '../components/search/search.component';
 import { FilterPipe } from '../components/pipes/filter.pipe';
+import { SortDirective } from '../util/sort.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FilterPipe } from '../components/pipes/filter.pipe';
     PaginaInicialComponent,
     EtiquetasGerencialComponent,
     FilterPipe,
-    SearchComponent
+    SearchComponent,
+    SortDirective
   ],
   imports: [
     CommonModule,

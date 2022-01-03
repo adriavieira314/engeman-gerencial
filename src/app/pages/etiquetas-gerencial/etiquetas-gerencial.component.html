@@ -3,12 +3,60 @@
    <table class="table table-bordered mt-3">
       <thead>
          <tr>
-            <th class="table-header">Cliente</th>
-            <th class="table-header">Total de Carro</th>
-            <th class="table-header">Carros no Cliente</th>
-            <th class="table-header">Retorno do Carro</th>
-            <th class="table-header">Data da Última Saída</th>
-            <th class="table-header">Data do Último Retorno</th>
+            <th [appSort]="dadosClientes" data-order="desc" data-name="cliente" class="table-header">
+               <div class="d-flex justify-content-around align-items-center">
+                  Cliente
+                  <div class="d-flex flex-column">
+                     <i aria-hidden="true" class="fa fa-caret-up"></i>
+                     <i aria-hidden="true" class="fa fa-caret-down"></i>
+                  </div>
+               </div>
+            </th>
+            <th [appSort]="dadosClientes" data-order="desc" data-name="totalCarro" class="table-header">
+               <div class="d-flex justify-content-around align-items-center">
+                  Total de Carro
+                  <div class="d-flex flex-column">
+                     <i aria-hidden="true" class="fa fa-caret-up"></i>
+                     <i aria-hidden="true" class="fa fa-caret-down"></i>
+                  </div>
+               </div>
+            </th>
+            <th [appSort]="dadosClientes" data-order="desc" data-name="carrosCliente" class="table-header">
+               <div class="d-flex justify-content-around align-items-center">
+                  Carros no Cliente
+                  <div class="d-flex flex-column">
+                     <i aria-hidden="true" class="fa fa-caret-up"></i>
+                     <i aria-hidden="true" class="fa fa-caret-down"></i>
+                  </div>
+               </div>
+            </th>
+            <th [appSort]="dadosClientes" data-order="desc" data-name="retornoCarro" class="table-header">
+               <div class="d-flex justify-content-around align-items-center">
+                  Retorno do Carro
+                  <div class="d-flex flex-column">
+                     <i aria-hidden="true" class="fa fa-caret-up"></i>
+                     <i aria-hidden="true" class="fa fa-caret-down"></i>
+                  </div>
+               </div>
+            </th>
+            <th [appSort]="dadosClientes" data-order="desc" data-name="dataUltimaSaida" class="table-header">
+               <div class="d-flex justify-content-around align-items-center">
+                  Data da Última Saída
+                  <div class="d-flex flex-column">
+                     <i aria-hidden="true" class="fa fa-caret-up"></i>
+                     <i aria-hidden="true" class="fa fa-caret-down"></i>
+                  </div>
+               </div>
+            </th>
+            <th [appSort]="dadosClientes" data-order="desc" data-name="dataUltimoRetorno" class="table-header">
+               <div class="d-flex justify-content-around align-items-center">
+                  Data do Último Retorno
+                  <div class="d-flex flex-column">
+                     <i aria-hidden="true" class="fa fa-caret-up"></i>
+                     <i aria-hidden="true" class="fa fa-caret-down"></i>
+                  </div>
+               </div>
+            </th>
          </tr>
       </thead>
       <tbody>
