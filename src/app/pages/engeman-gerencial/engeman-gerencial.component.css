@@ -9,65 +9,6 @@
    margin-top: 40px;
 }
 
-#filtro-data {
-   position: absolute;
-   top: 80px;
-   right: 580px;
-   width: 300px;
-   height: 100px;
-   z-index: 1;
-}
-
-@media only screen and (max-width: 1240px) {
-   #filtro-data {
-      right: 500px;
-   }
-}
-
-@media only screen and (max-width: 1170px) {
-   #filtro-data {
-      right: 450px;
-   }
-}
-
-@media only screen and (max-width: 1080px) {
-   #filtro-data {
-      right: 430px;
-   }
-}
-
-@media only screen and (max-width: 1030px) {
-   #filtro-data {
-      right: 400px;
-   }
-}
-
-@media only screen and (max-width: 960px) {
-   #filtro-data {
-      top: 62px;
-      right: 350px;
-   }
-}
-
-@media only screen and (max-width: 835px) {
-   #filtro-data {
-      right: 320px;
-   }
-}
-
-@media only screen and (max-width: 641px) {
-   #div-engeman {
-      margin-top: 60px;
-   }
-   #filtro-data {
-      top: 40px;
-      right: 180px;
-   }
-}
-
-@media only screen and (max-width: 530px) {
-   #filtro-data {
-      top: 40px;
-      right: 130px;
-   }
+.fa {
+   font-size: 14px;
 }

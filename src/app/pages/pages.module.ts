@@ -17,6 +17,8 @@ import { EtiquetasGerencialComponent } from './etiquetas-gerencial/etiquetas-ger
 import { SearchComponent } from '../components/search/search.component';
 import { FilterPipe } from '../components/pipes/filter.pipe';
 import { SortDirective } from '../util/sort.directive';
+import { FilterEngemanPipe } from '../components/pipes/filterEngeman.pipe';
+import { DateFilterComponent } from '../components/dateFilter/dateFilter.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +26,10 @@ import { SortDirective } from '../util/sort.directive';
     PaginaInicialComponent,
     EtiquetasGerencialComponent,
     FilterPipe,
+    FilterEngemanPipe,
     SearchComponent,
-    SortDirective
+    SortDirective,
+    DateFilterComponent,
   ],
   imports: [
     CommonModule,
