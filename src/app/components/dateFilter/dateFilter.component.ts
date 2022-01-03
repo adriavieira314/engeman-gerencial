@@ -5,7 +5,9 @@ import { debounceTime, filter } from 'rxjs/operators';
 
 @Component({
     selector: 'app-date-filter',
-    templateUrl: './dateFilter.component.html'
+    templateUrl: './dateFilter.component.html',
+    styleUrls: ['./dateFilter.component.css']
+
 })
 export class DateFilterComponent implements OnInit, OnDestroy{
   debounce: Subject<string> = new Subject<string>();
